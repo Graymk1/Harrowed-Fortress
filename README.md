@@ -7,13 +7,14 @@ This is a Unity 6 Universal 2D project for developing a 2D Survival Horror RPG n
 Art Style: 2D pixel-art with both isometric and side-scrolling perspectives.
 
 # Core loop:
-> player is in world map
-> player enters fortress
-> player fights upwards through fortress and loses resources (if he runs out uh oh)
-> player gets something (ability?)
-> player leaves fortress
-> player runs through the world map gathering resources trying not to get killed
-> player uses his new ability to get to the other fortress
+
+player is in world map
+player enters fortress
+player fights upwards through fortress and loses resources (if he runs out uh oh)
+player gets something (ability?)
+player leaves fortress
+player runs through the world map gathering resources trying not to get killed
+player uses his new ability to get to the other fortress
 
 # MDA Framework:
 
