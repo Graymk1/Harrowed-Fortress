@@ -2,12 +2,26 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float walkSpeed = 5;
+    public float walkSpeed = 5f;
+    public float jumpHeight = 16f;
+    public Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
+    }
+    public Transform groundCheckPoint;
+
+    public LayerMask groundLayer;
+    private float groundCheckRadius = 0.2f;
+    public int maxJumps = 1;
+    public int maxJump = 1;
+    public int numJumps = 0;
+
+    bool GroundCheck()
+    {
+        return Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
     }
 
     // Update is called once per frame
@@ -15,5 +29,21 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * walkSpeed;
         transform.Translate(horizontalInput, 0, 0);
+
+        float nextVelocityX = horizontalInput * walkSpeed;
+        float nextVelocityY = rb.linearVelocityY;
+
+        if (GroundCheck() && nextVelocityY <= 0)
+        {
+            numJumps = maxJumps;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && numJumps > 0 && nextVelocityY <= 0)
+        {
+            nextVelocityY = jumpHeight;
+            numJumps -= 1;
+        }
+
+        rb.linearVelocity = new Vector2(nextVelocityX, nextVelocityY);
     }
 }
