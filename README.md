@@ -8,31 +8,31 @@ Art Style: 2D pixel-art with both isometric and side-scrolling perspectives.
 
 # Core loop:
 
-player is in world map
-player enters fortress
-player fights upwards through fortress and loses resources (if he runs out uh oh)
-player gets something (ability?)
-player leaves fortress
-player runs through the world map gathering resources trying not to get killed
-player uses his new ability to get to the other fortress
+- player is in world map
+- player enters fortress
+- player fights upwards through fortress and loses resources (if he runs out uh oh)
+- player gets something (ability?)
+- player leaves fortress
+- player runs through the world map gathering resources trying not to get killed
+- player uses his new ability to get to the other fortress
 
 # MDA Framework:
 
 ## Mechanics: 
-Jumping
-Movement
-Sword swinging(maybe follow mouse mechanic)
-Light currency (you get this from enemies, everytime you swing your sword you lose light)
-Light currency can enchant sword for swings to have less light needed
-Completing fortresses upgrades abilities (very vague)
+- Jumping
+- Movement
+- Sword swinging(maybe follow mouse mechanic)
+- Light currency (you get this from enemies, everytime you swing your sword you lose light)
+- Light currency can enchant sword for swings to have less light needed
+- Completing fortresses upgrades abilities (very vague)
 ## Dynamics:
-Completing levels quickly
-Conserving light currency
+- Completing levels quickly
+- Conserving light currency
 ## Aesthetics:
-Horror music
-Pixel art
-Darkness with lantern
-Dark forest
+- Horror music
+- Pixel art
+- Darkness with lantern
+- Dark forest
 
 
 # Five-Day Plan
