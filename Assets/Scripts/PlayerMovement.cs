@@ -30,6 +30,15 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * walkSpeed;
         transform.Translate(horizontalInput, 0, 0);
 
+        if (horizontalInput > 0)
+        {
+            transform.localScale = new Vector3 (1, 1, 1);
+        }
+        else if (horizontalInput < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+
         float nextVelocityX = horizontalInput * walkSpeed;
         float nextVelocityY = rb.linearVelocityY;
 
