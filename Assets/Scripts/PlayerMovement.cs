@@ -6,10 +6,12 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight = 16f;
     public Rigidbody2D rb;
 
+    public static PlayerMovement instance;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        instance = this;
     }
     public Transform groundCheckPoint;
 
