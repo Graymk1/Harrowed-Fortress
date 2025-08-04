@@ -13,14 +13,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal")*walkSpeed*Time.deltaTime;
-        if (horizontalInput > 0 )
-        {
-            transform.position += Vector3.right;
-        }
-        else if (horizontalInput < 0)
-        {
-            transform.position += Vector3.left;
-        }
+        float horizontalInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * walkSpeed;
+        transform.Translate(horizontalInput, 0, 0);
     }
 }
