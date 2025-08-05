@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontalInput > 0 && swordRotator.transform.rotation.z == 0)
         {
-            transform.localScale = new Vector3 (1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else if (horizontalInput < 0 && swordRotator.transform.rotation.z == 0)
         {

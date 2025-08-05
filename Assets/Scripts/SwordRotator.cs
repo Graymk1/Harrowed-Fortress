@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class SwordRotator : MonoBehaviour
 {
-    
+
 
     public GameObject sword;
     public GameObject visualSword;
     private bool debounce = true;
-    
+    public int SlashCostLightCurr;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -28,18 +29,22 @@ public class SwordRotator : MonoBehaviour
 
         float angle = Mathf.Atan2(mouseDir.y, mouseDir.x) * Mathf.Rad2Deg;
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && debounce)
+        if (LightCurrency.Instance.LightCurrencyCount >= SlashCostLightCurr)
         {
-            debounce = false;
-            print(mouseDir);
-            StartCoroutine(UseSword());
+            if (Input.GetKeyDown(KeyCode.Mouse0) && debounce)
+            {
+                debounce = false;
+                print(mouseDir);
+                LightCurrency.Instance.ChangeLightCurrency(-SlashCostLightCurr);
+                StartCoroutine(UseSword());
+            }
         }
 
         IEnumerator UseSword()
         {
             if (PlayerMovement.instance.transform.localScale.x == 1)
             {
-                
+
                 sword.SetActive(true);
                 visualSword.SetActive(false);
                 transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
@@ -64,9 +69,9 @@ public class SwordRotator : MonoBehaviour
 
 
         }
-        
 
 
-        
+
+
     }
 }
