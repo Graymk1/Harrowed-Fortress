@@ -21,6 +21,12 @@ public class PlayerMovement : MonoBehaviour
     public int maxJumps = 1;
     public int maxJump = 1;
     public int numJumps = 0;
+    public int maxDashes = 1;
+    public int numDashes = 1;
+    private float lastPressTime;
+    public float doublePressThreshold = 0.3f;
+
+    public float dashStrength = 10f;
 
     bool GroundCheck()
     {
@@ -30,6 +36,22 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            float timeSinceLastPress = Time.time - lastPressTime;
+
+            if (timeSinceLastPress < doublePressThreshold)
+            {
+                rb.linearVelocityX = dashStrength;
+                print("double clicked");
+            }
+
+            lastPressTime = Time.time;
+        }
+
+
+
+
         float horizontalInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * walkSpeed;
         transform.Translate(horizontalInput, 0, 0);
 
