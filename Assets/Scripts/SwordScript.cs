@@ -20,17 +20,13 @@ public class SwordScript : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            collision.GetComponent<Health>().CurHealth -= damage;
-            if (collision.GetComponent<Health>().CurHealth <= 0)
-            {
-                Destroy(collision.gameObject);
-            }
+            collision.GetComponent<Health>().ChangeHealth(-damage);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
