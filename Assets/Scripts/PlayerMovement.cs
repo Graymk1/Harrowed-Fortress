@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed = 5f;
     public float jumpHeight = 16f;
     public Rigidbody2D rb;
+    public GameObject swordRotator;
 
     public static PlayerMovement instance;
 
@@ -32,11 +33,11 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * walkSpeed;
         transform.Translate(horizontalInput, 0, 0);
 
-        if (horizontalInput > 0)
+        if (horizontalInput > 0 && swordRotator.transform.rotation.z == 0)
         {
             transform.localScale = new Vector3 (1, 1, 1);
         }
-        else if (horizontalInput < 0)
+        else if (horizontalInput < 0 && swordRotator.transform.rotation.z == 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
