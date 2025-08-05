@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public float doublePressThreshold = 0.3f;
 
     public float dashStrength = 10f;
+    public float dashCooldown = 1f;
 
     bool GroundCheck()
     {
@@ -42,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (timeSinceLastPress < doublePressThreshold)
             {
-                rb.linearVelocityX = dashStrength;
+                rb.linearVelocity = new Vector2(transform.localScale.x * dashStrength, 0f);
                 print("double clicked");
             }
 
