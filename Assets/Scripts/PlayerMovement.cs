@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Before: " + rb.linearVelocity);
 
             // Forcefully override x velocity
-            rb.gravityScale = 0;
+            rb.gravityScale = 0;    
             rb.AddForce(new(transform.localScale.x * dashStrength, 0), ForceMode2D.Impulse);
             
             rb.linearVelocityY = 0f;

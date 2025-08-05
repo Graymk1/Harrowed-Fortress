@@ -7,7 +7,6 @@ public class SwordRotator : MonoBehaviour
 
 
     public GameObject sword;
-    public GameObject visualSword;
     private bool debounce = true;
     public int SlashCostLightCurr;
 
@@ -48,24 +47,20 @@ public class SwordRotator : MonoBehaviour
                 {
                     PlayerMovement.instance.transform.localScale = new Vector3(1, 1, 1);
                     sword.SetActive(true);
-                    visualSword.SetActive(false);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
                     yield return new WaitForSeconds(0.5f);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
-                    visualSword.SetActive(true);
                     debounce = true;
                 }
                 else
                 {
                     PlayerMovement.instance.transform.localScale = new Vector3(-1, 1, 1);
                     sword.SetActive(true);
-                    visualSword.SetActive(false);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 180f));
                     yield return new WaitForSeconds(0.5f);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
-                    visualSword.SetActive(true);
                     debounce = true;
                 }
                 
@@ -77,12 +72,10 @@ public class SwordRotator : MonoBehaviour
                 {
                     PlayerMovement.instance.transform.localScale = new Vector3(1, 1, 1);
                     sword.SetActive(true);
-                    visualSword.SetActive(false);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
                     yield return new WaitForSeconds(0.5f);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
-                    visualSword.SetActive(true);
                     debounce = true;
                     
 
@@ -91,12 +84,10 @@ public class SwordRotator : MonoBehaviour
                 {
                     PlayerMovement.instance.transform.localScale = new Vector3(-1, 1, 1);
                     sword.SetActive(true);
-                    visualSword.SetActive(false);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 180f));
                     yield return new WaitForSeconds(0.5f);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
-                    visualSword.SetActive(true);
                     debounce = true;
                 }
             }
