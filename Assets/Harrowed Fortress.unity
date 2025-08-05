@@ -1465,7 +1465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ce8935e01f2a14f862fb91cf856554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 1
 --- !u!1 &1427618430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,6 +1759,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4966780428031384003, guid: af8474d510cad4216b3244b2727aefe6, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966780428031384003, guid: af8474d510cad4216b3244b2727aefe6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966780428031384003, guid: af8474d510cad4216b3244b2727aefe6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966780428031384003, guid: af8474d510cad4216b3244b2727aefe6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7809611096073318727, guid: af8474d510cad4216b3244b2727aefe6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.43082327
@@ -1806,8 +1822,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8043596094760272415, guid: af8474d510cad4216b3244b2727aefe6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2103424986}
   m_SourcePrefab: {fileID: 100100000, guid: af8474d510cad4216b3244b2727aefe6, type: 3}
+--- !u!1 &2103424979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8043596094760272415, guid: af8474d510cad4216b3244b2727aefe6, type: 3}
+  m_PrefabInstance: {fileID: 1545416963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2103424986
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103424979}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c464613b81f447a9b525f27d466df6c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

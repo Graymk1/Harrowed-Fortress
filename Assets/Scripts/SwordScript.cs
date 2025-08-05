@@ -21,6 +21,7 @@ public class SwordScript : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             collision.GetComponent<Health>().ChangeHealth(-damage);
+            collision.GetComponent<Animator>().SetTrigger("Hurt");
         }
     }
 
