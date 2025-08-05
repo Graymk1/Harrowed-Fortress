@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -23,11 +24,10 @@ public class PlayerMovement : MonoBehaviour
     public int numJumps = 0;
     public int maxDashes = 1;
     public int numDashes = 1;
-    private float lastPressTime;
-    public float doublePressThreshold = 0.3f;
 
     public float dashStrength = 10f;
     public float dashCooldown = 1f;
+    private bool isDashing = false;
 
     bool GroundCheck()
     {
@@ -37,18 +37,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            float timeSinceLastPress = Time.time - lastPressTime;
-
-            if (timeSinceLastPress < doublePressThreshold)
-            {
-                rb.linearVelocity = new Vector2(transform.localScale.x * dashStrength, 0f);
-                print("double clicked");
-            }
-
-            lastPressTime = Time.time;
-        }
 
 
 
@@ -78,7 +66,32 @@ public class PlayerMovement : MonoBehaviour
             nextVelocityY = jumpHeight;
             numJumps -= 1;
         }
+        if (isDashing == false)
+        {
+            rb.linearVelocity = new Vector2(nextVelocityX, nextVelocityY);
+        }
 
-        rb.linearVelocity = new Vector2(nextVelocityX, nextVelocityY);
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            isDashing = true;
+            StartCoroutine(Dash());
+        }
+
+        IEnumerator Dash()
+        {
+            Debug.Log("Before: " + rb.linearVelocity);
+
+            // Forcefully override x velocity
+            rb.gravityScale = 0;
+            rb.AddForce(new(transform.localScale.x * dashStrength, 0), ForceMode2D.Impulse);
+            
+            rb.linearVelocityY = 0f;
+            yield return new WaitForSeconds(.15f);
+            rb.gravityScale = 3;
+            Debug.Log("After: " + rb.linearVelocity);
+            isDashing = false;
+            
+        }
     }
+
 }

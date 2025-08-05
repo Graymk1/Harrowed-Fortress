@@ -44,27 +44,63 @@ public class SwordRotator : MonoBehaviour
         {
             if (PlayerMovement.instance.transform.localScale.x == 1)
             {
+                if (mouseDir.x > 0)
+                {
+                    PlayerMovement.instance.transform.localScale = new Vector3(1, 1, 1);
+                    sword.SetActive(true);
+                    visualSword.SetActive(false);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+                    yield return new WaitForSeconds(0.5f);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
+                    sword.SetActive(false);
+                    visualSword.SetActive(true);
+                    debounce = true;
+                }
+                else
+                {
+                    PlayerMovement.instance.transform.localScale = new Vector3(-1, 1, 1);
+                    sword.SetActive(true);
+                    visualSword.SetActive(false);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 180f));
+                    yield return new WaitForSeconds(0.5f);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
+                    sword.SetActive(false);
+                    visualSword.SetActive(true);
+                    debounce = true;
+                }
+                
 
-                sword.SetActive(true);
-                visualSword.SetActive(false);
-                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-                yield return new WaitForSeconds(0.5f);
-                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
-                sword.SetActive(false);
-                visualSword.SetActive(true);
-                debounce = true;
             }
             else
             {
-                sword.SetActive(true);
-                visualSword.SetActive(false);
-                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 180f));
-                yield return new WaitForSeconds(0.5f);
-                transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
-                sword.SetActive(false);
-                visualSword.SetActive(true);
-                debounce = true;
+                if (mouseDir.x > 0)
+                {
+                    PlayerMovement.instance.transform.localScale = new Vector3(1, 1, 1);
+                    sword.SetActive(true);
+                    visualSword.SetActive(false);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+                    yield return new WaitForSeconds(0.5f);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
+                    sword.SetActive(false);
+                    visualSword.SetActive(true);
+                    debounce = true;
+                    
+
+                }
+                else
+                {
+                    PlayerMovement.instance.transform.localScale = new Vector3(-1, 1, 1);
+                    sword.SetActive(true);
+                    visualSword.SetActive(false);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 180f));
+                    yield return new WaitForSeconds(0.5f);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
+                    sword.SetActive(false);
+                    visualSword.SetActive(true);
+                    debounce = true;
+                }
             }
+                    
 
 
 
