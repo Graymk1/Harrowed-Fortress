@@ -3,31 +3,35 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement Setting")]
     public float walkSpeed = 5f;
-    public float jumpHeight = 16f;
     public Rigidbody2D rb;
     public GameObject swordRotator;
 
     public static PlayerMovement instance;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        instance = this;
-    }
     public Transform groundCheckPoint;
 
     public LayerMask groundLayer;
     private float groundCheckRadius = 0.2f;
+    [Header("Jump Setting")]
+    public float jumpHeight = 16f;
     public int maxJumps = 1;
     public int maxJump = 1;
     public int numJumps = 0;
+    [Header("Dash Setting")]
     public int maxDashes = 1;
     public int numDashes = 1;
 
     public float dashStrength = 10f;
     public float dashCooldown = 1f;
     private bool isDashing = false;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        instance = this;
+    }
+
 
     bool GroundCheck()
     {
@@ -37,10 +41,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
-
         float horizontalInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * walkSpeed;
         transform.Translate(horizontalInput, 0, 0);
 
@@ -82,15 +82,15 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Before: " + rb.linearVelocity);
 
             // Forcefully override x velocity
-            rb.gravityScale = 0;    
+            rb.gravityScale = 0;
             rb.AddForce(new(transform.localScale.x * dashStrength, 0), ForceMode2D.Impulse);
-            
+
             rb.linearVelocityY = 0f;
             yield return new WaitForSeconds(.15f);
             rb.gravityScale = 3;
             Debug.Log("After: " + rb.linearVelocity);
             isDashing = false;
-            
+
         }
     }
 

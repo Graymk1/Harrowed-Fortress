@@ -4799,13 +4799,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 6
-  jumpHeight: 16
   rb: {fileID: 1427618432}
   swordRotator: {fileID: 573946596}
   groundCheckPoint: {fileID: 1515576194}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  jumpHeight: 16
   maxJumps: 1
   maxJump: 1
   numJumps: 0
@@ -4874,7 +4874,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.26}
   m_Radius: 0.5
 --- !u!212 &1427618434
 SpriteRenderer:
@@ -5048,7 +5048,7 @@ Transform:
   m_GameObject: {fileID: 1515576193}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.498, z: 0}
+  m_LocalPosition: {x: 0, y: -0.637, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
