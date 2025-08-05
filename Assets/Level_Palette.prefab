@@ -104,6 +104,15 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -1093400205, guid: 3383d9af22ecc4de6bc10ea6b4bed120, type: 3}
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+  m_TileMatrixArray:
+>>>>>>> Stashed changes
+  - m_RefCount: 1
+    m_Data: {fileID: 3688408615200304179, guid: 9368874680c55458ea948bc3fab8b191, type: 3}
+>>>>>>> 63e3ea3 (more sprites! platforms, etc.)
   m_TileMatrixArray:
   - m_RefCount: 1
     m_Data:
@@ -202,7 +211,15 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+<<<<<<< HEAD
 --- !u!114 &691560944851196353
+=======
+<<<<<<< Updated upstream
+--- !u!114 &7503321600301315143
+=======
+--- !u!114 &1108774065614442687
+>>>>>>> Stashed changes
+>>>>>>> 63e3ea3 (more sprites! platforms, etc.)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
