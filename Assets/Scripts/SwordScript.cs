@@ -10,7 +10,7 @@ public class SwordScript : MonoBehaviour
     public float damage = 1f;
     private float damageTime;
     public float damageCD = 0.5f;
-
+    public float knockback = 10f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +25,8 @@ public class SwordScript : MonoBehaviour
             damageTime = Time.time + damageCD;
             collision.GetComponent<Health>().ChangeHealth(-damage);
             collision.GetComponent<Animator>().SetTrigger("Hurt");
+
+            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 5) * 50 * PlayerMovement.instance.transform.localScale.x);
         }
     }
 

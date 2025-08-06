@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02e536b3dba3d4571b756046948417c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightCurrency: {fileID: 847967227913949095, guid: 8ab8ae824d883d645898a7649292b1e1, type: 3}
   MaxHealth: 3
   CurHealth: 0
 --- !u!95 &4499199556525828906

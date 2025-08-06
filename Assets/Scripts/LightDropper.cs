@@ -17,7 +17,7 @@ public class LightDropper : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-
+            Destroy(gameObject);
         }
     }
 
