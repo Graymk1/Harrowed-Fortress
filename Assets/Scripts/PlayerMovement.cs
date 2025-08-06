@@ -23,8 +23,10 @@ public class PlayerMovement : MonoBehaviour
     public int maxDashes = 1;
     private int numDashes;
     public float dashStrength = 10f;
-    public float dashCooldown = 1f;
+    private float dashTimer;
+    public float dashCooldown = 0.5f;
     private bool isDashing = false;
+    public TrailRenderer trail;
     [Header("Player Hp")]
     public Health PlayerHp;
 
@@ -69,12 +71,12 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleJump()
     {
-        if (GroundCheck() && rb.linearVelocityY < 0.5f)
+        if (GroundCheck() && rb.linearVelocityY < 0.5f && rb.linearVelocityY > -0.5f)
         {
             numJumps = maxJumps;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && numJumps > 0 && rb.linearVelocityY < 0.5f)
+        if (Input.GetKeyDown(KeyCode.Space) && numJumps > 0 && rb.linearVelocityY < 0.5f && rb.linearVelocityY > -0.5f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
             numJumps--;
@@ -83,9 +85,11 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleDash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing && Time.time > dashTimer)
         {
+            dashTimer = Time.time + dashCooldown;
             StartCoroutine(Dash());
+            trail.emitting = true;
         }
     }
 
@@ -101,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb.gravityScale = defaultGravityScale;
         isDashing = false;
+        trail.emitting = false;
     }
 
     bool GroundCheck()
