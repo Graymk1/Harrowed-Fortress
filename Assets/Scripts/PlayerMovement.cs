@@ -100,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
         rb.gravityScale = 0f;
 
         rb.linearVelocity = new Vector2(transform.localScale.x * dashStrength, 0f);
+        LightCurrency.Instance.ChangeLightCurrency(-3);
 
         yield return new WaitForSeconds(0.15f);
 

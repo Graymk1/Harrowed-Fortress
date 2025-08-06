@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 82a8443fa23fc4aea85d7481ce402943
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7777864820462380973
+    second: WretchFlying_0
+  - first:
+      213: -8656960916919238578
+    second: WretchFlying_1
+  - first:
+      213: 4131787167769975239
+    second: WretchFlying_2
+  - first:
+      213: 1237840298197023101
+    second: WretchFlying_3
+  - first:
+      213: -5006567147795787658
+    second: WretchFlying_4
+  - first:
+      213: 8441668726958284017
+    second: WretchFlying_5
+  - first:
+      213: -1981340325372460311
+    second: WretchFlying_6
+  - first:
+      213: -8107480052025377385
+    second: WretchFlying_7
+  - first:
+      213: 7806060473380694710
+    second: WretchFlying_8
+  - first:
+      213: 6785933909022999653
+    second: WretchFlying_9
+  - first:
+      213: -6062686370481406332
+    second: WretchFlying_10
+  - first:
+      213: -5249929459347703269
+    second: WretchFlying_11
+  - first:
+      213: -974774067703880669
+    second: WretchFlying_12
+  - first:
+      213: -550499661612277538
+    second: WretchFlying_13
+  - first:
+      213: -8736600153835948195
+    second: WretchFlying_14
+  - first:
+      213: -2263809924577639499
+    second: WretchFlying_15
+  - first:
+      213: 377614458049462827
+    second: WretchFlying_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WretchFlying_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 416
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358155997297f0490800000000000000
+      internalID: -7777864820462380973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 416
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40c690a9eb4cd780800000000000000
+      internalID: -8656960916919238578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 416
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c95276b98e075930800000000000000
+      internalID: 4131787167769975239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_3
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 416
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7972be5131bd2110800000000000000
+      internalID: 1237840298197023101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_4
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 416
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670dd7b74b9158ab0800000000000000
+      internalID: -5006567147795787658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 288
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc5fd53bf4d62570800000000000000
+      internalID: 8441668726958284017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 288
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2840fb87dd084e0800000000000000
+      internalID: -1981340325372460311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_7
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 291
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d367319d17c7f80800000000000000
+      internalID: -8107480052025377385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_8
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 291
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bae21b64a2b45c60800000000000000
+      internalID: 7806060473380694710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_9
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 297
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5640894dfea7c2e50800000000000000
+      internalID: 6785933909022999653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 169
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e7ad61ed20ddba0800000000000000
+      internalID: -6062686370481406332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 169
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ab8b7d8f08427b0800000000000000
+      internalID: -5249929459347703269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 169
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3246f366628e872f0800000000000000
+      internalID: -974774067703880669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_13
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 169
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0a0a4797b3c58f0800000000000000
+      internalID: -550499661612277538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_14
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 169
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d573cf5d27c51c680800000000000000
+      internalID: -8736600153835948195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_15
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 35
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3cb862ed45590e0800000000000000
+      internalID: -2263809924577639499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WretchFlying_16
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 35
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b220712595e8d3500800000000000000
+      internalID: 377614458049462827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WretchFlying_0: -7777864820462380973
+      WretchFlying_1: -8656960916919238578
+      WretchFlying_10: -6062686370481406332
+      WretchFlying_11: -5249929459347703269
+      WretchFlying_12: -974774067703880669
+      WretchFlying_13: -550499661612277538
+      WretchFlying_14: -8736600153835948195
+      WretchFlying_15: -2263809924577639499
+      WretchFlying_16: 377614458049462827
+      WretchFlying_2: 4131787167769975239
+      WretchFlying_3: 1237840298197023101
+      WretchFlying_4: -5006567147795787658
+      WretchFlying_5: 8441668726958284017
+      WretchFlying_6: -1981340325372460311
+      WretchFlying_7: -8107480052025377385
+      WretchFlying_8: 7806060473380694710
+      WretchFlying_9: 6785933909022999653
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
