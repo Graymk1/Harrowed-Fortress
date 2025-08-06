@@ -171,7 +171,7 @@ MonoBehaviour:
   walkSpeed: 5
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   groundCheckPoint: {fileID: 612835410920097998}
   damage: 1
   DamageCd: 0.5
