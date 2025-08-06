@@ -145799,6 +145799,7 @@ GameObject:
   - component: {fileID: 1359231348}
   - component: {fileID: 1359231351}
   - component: {fileID: 1359231352}
+  - component: {fileID: 1359231353}
   m_Layer: 0
   m_Name: CombatSword
   m_TagString: Untagged
@@ -145864,7 +145865,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 6275268049351320821, guid: df500386735c14b2ba336cbda9f209db, type: 3}
   m_Color: {r: 0.57861626, g: 0.57861626, b: 0.57861626, a: 1}
   m_FlipX: 0
@@ -145936,6 +145937,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   damageCD: 0.5
+--- !u!95 &1359231353
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359231346}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a2b24f7dc3e648a7bc99d93c6ee379e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1365694923
 PrefabInstance:
   m_ObjectHideFlags: 0
