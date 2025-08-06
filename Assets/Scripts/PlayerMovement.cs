@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(GroundCheck());
+        //Debug.Log(GroundCheck());
         HandleMovement();
         HandleJump();
         HandleDash();

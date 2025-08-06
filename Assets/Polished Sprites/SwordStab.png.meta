@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SwordStab_0: -4745079187644508017
+      SwordStab_1: -1145916085372021622
+      SwordStab_10: -319332241062915732
+      SwordStab_11: -8518073418805601870
+      SwordStab_12: 1024280908294065817
+      SwordStab_13: 7421523740808964135
+      SwordStab_14: 1982113067282785461
+      SwordStab_15: 6094432085556391318
+      SwordStab_2: -7961495876779517849
+      SwordStab_3: -94277258266127133
+      SwordStab_4: 4240642860939483542
+      SwordStab_5: -1862555363881763524
+      SwordStab_6: -1953496738462394322
+      SwordStab_7: 6025523363493408467
+      SwordStab_8: -1837268605691404156
+      SwordStab_9: 6216903601538381984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
