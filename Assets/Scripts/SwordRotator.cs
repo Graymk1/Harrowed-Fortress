@@ -28,16 +28,15 @@ public class SwordRotator : MonoBehaviour
 
         float angle = Mathf.Atan2(mouseDir.y, mouseDir.x) * Mathf.Rad2Deg;
 
-        if (LightCurrency.Instance.LightCurrencyCount >= SlashCostLightCurr)
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && debounce)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0) && debounce)
-            {
-                debounce = false;
-                print(mouseDir);
-                LightCurrency.Instance.ChangeLightCurrency(-SlashCostLightCurr);
-                StartCoroutine(UseSword());
-            }
+            debounce = false;
+            print(mouseDir);
+            LightCurrency.Instance.ChangeLightCurrency(-SlashCostLightCurr);
+            StartCoroutine(UseSword());
         }
+
 
         IEnumerator UseSword()
         {
@@ -63,7 +62,7 @@ public class SwordRotator : MonoBehaviour
                     sword.SetActive(false);
                     debounce = true;
                 }
-                
+
 
             }
             else
@@ -77,7 +76,7 @@ public class SwordRotator : MonoBehaviour
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
                     debounce = true;
-                    
+
 
                 }
                 else
@@ -91,7 +90,7 @@ public class SwordRotator : MonoBehaviour
                     debounce = true;
                 }
             }
-                    
+
 
 
 

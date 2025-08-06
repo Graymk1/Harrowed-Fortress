@@ -141965,7 +141965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0760c87d95d784d6eb0819afc01f9005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpBar: {fileID: 1625700463}
   LightCur: {fileID: 877626128}
 --- !u!114 &1208848640
 MonoBehaviour:
@@ -142407,7 +142406,6 @@ GameObject:
   - component: {fileID: 1427618434}
   - component: {fileID: 1427618432}
   - component: {fileID: 1427618431}
-  - component: {fileID: 1427618436}
   - component: {fileID: 1427618437}
   - component: {fileID: 1427618438}
   - component: {fileID: 1427618439}
@@ -142444,7 +142442,7 @@ MonoBehaviour:
   dashStrength: 20
   dashCooldown: 1
   trail: {fileID: 1427618439}
-  PlayerHp: {fileID: 1427618436}
+  PlayerHp: {fileID: 0}
 --- !u!50 &1427618432
 Rigidbody2D:
   serializedVersion: 5
@@ -142545,20 +142543,6 @@ Transform:
   - {fileID: 937287748}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1427618436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427618430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02e536b3dba3d4571b756046948417c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealth: 10
-  CurHealth: 0
 --- !u!114 &1427618437
 MonoBehaviour:
   m_ObjectHideFlags: 0

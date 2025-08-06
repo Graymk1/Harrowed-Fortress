@@ -11,5 +11,9 @@ public class LightCurrency : MonoBehaviour
     public void ChangeLightCurrency(int amount)
     {
         LightCurrencyCount += amount;
+        if (LightCurrencyCount <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -51,7 +51,7 @@ public class Enemy_Movement : MonoBehaviour
             DamageTimer -= Time.deltaTime;
             if (DamageTimer < 0)
             {
-                collision.gameObject.GetComponent<Health>().ChangeHealth(-damage);
+                collision.gameObject.GetComponent<LightCurrency>().ChangeLightCurrency(-damage);
                 collision.gameObject.GetComponent<Animator>().SetTrigger("Hurt");
                 DamageTimer = DamageCd;
             }
