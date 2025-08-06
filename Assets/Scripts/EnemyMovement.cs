@@ -6,6 +6,9 @@ public class Enemy_Movement : MonoBehaviour
     Rigidbody2D rb;
     public LayerMask groundLayer;
     public Transform groundCheckPoint;
+    public int damage;
+    public float DamageCd;
+    public float DamageTimer;
     bool faceRight = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,5 +38,23 @@ public class Enemy_Movement : MonoBehaviour
     bool FlipHere()
     {
         return !Physics2D.Raycast(groundCheckPoint.position, Vector2.down, 0.7f, groundLayer) || Physics2D.OverlapCircle(groundCheckPoint.position, 0.2f, groundLayer);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        DamageTimer = 0;
+    }
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            DamageTimer -= Time.deltaTime;
+            if (DamageTimer < 0)
+            {
+                collision.gameObject.GetComponent<Health>().ChangeHealth(-damage);
+                collision.gameObject.GetComponent<Animator>().SetTrigger("Hurt");
+                DamageTimer = DamageCd;
+            }
+        }
     }
 }

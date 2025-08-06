@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing = false;
 
     private float defaultGravityScale;
+    
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(GroundCheck());
         HandleMovement();
         HandleJump();
         HandleDash();
