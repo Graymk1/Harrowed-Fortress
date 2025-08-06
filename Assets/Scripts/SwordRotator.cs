@@ -35,6 +35,7 @@ public class SwordRotator : MonoBehaviour
             print(mouseDir);
             LightCurrency.Instance.ChangeLightCurrency(-SlashCostLightCurr);
             StartCoroutine(UseSword());
+            sword.GetComponent<Animator>().SetBool("Hitting", true);
         }
 
 
@@ -47,20 +48,22 @@ public class SwordRotator : MonoBehaviour
                     PlayerMovement.instance.transform.localScale = new Vector3(1, 1, 1);
                     sword.SetActive(true);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-                    yield return new WaitForSeconds(0.5f);
+                    yield return new WaitForSeconds(0.25f);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
                     debounce = true;
+                    sword.GetComponent<Animator>().SetBool("Hitting", false);
                 }
                 else
                 {
                     PlayerMovement.instance.transform.localScale = new Vector3(-1, 1, 1);
                     sword.SetActive(true);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 180f));
-                    yield return new WaitForSeconds(0.5f);
+                    yield return new WaitForSeconds(0.25f);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
                     debounce = true;
+                    sword.GetComponent<Animator>().SetBool("Hitting", false);
                 }
 
 
@@ -72,11 +75,11 @@ public class SwordRotator : MonoBehaviour
                     PlayerMovement.instance.transform.localScale = new Vector3(1, 1, 1);
                     sword.SetActive(true);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-                    yield return new WaitForSeconds(0.5f);
+                    yield return new WaitForSeconds(0.25f);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
                     debounce = true;
-
+                    sword.GetComponent<Animator>().SetBool("Hitting", false);
 
                 }
                 else
@@ -84,10 +87,11 @@ public class SwordRotator : MonoBehaviour
                     PlayerMovement.instance.transform.localScale = new Vector3(-1, 1, 1);
                     sword.SetActive(true);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 180f));
-                    yield return new WaitForSeconds(0.5f);
+                    yield return new WaitForSeconds(0.25f);
                     transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0));
                     sword.SetActive(false);
                     debounce = true;
+                    sword.GetComponent<Animator>().SetBool("Hitting", false);
                 }
             }
 
