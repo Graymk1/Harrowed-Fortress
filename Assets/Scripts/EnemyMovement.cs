@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy_Movement : MonoBehaviour
@@ -22,22 +23,21 @@ public class Enemy_Movement : MonoBehaviour
         if (FlipHere())
         {
             faceRight = !faceRight;
+            transform.localScale = new(-transform.localScale.x, transform.localScale.y, 1);
         }
         if (faceRight)
         {
-            transform.localScale = new(1, 1, 1);
             rb.linearVelocity = new(walkSpeed, rb.linearVelocity.y);
         }
         else if (!faceRight)
         {
-            transform.localScale = new(-1, 1, 1);
             rb.linearVelocity = new(-walkSpeed, rb.linearVelocity.y);
         }
         Debug.Log(FlipHere());
     }
     bool FlipHere()
     {
-        return !Physics2D.Raycast(groundCheckPoint.position, Vector2.down, 0.7f, groundLayer) || Physics2D.OverlapCircle(groundCheckPoint.position, 0.2f, groundLayer);
+        return !Physics2D.Raycast(groundCheckPoint.position, Vector2.down, Math.Abs(transform.localScale.x) * 0.7f, groundLayer) || Physics2D.OverlapCircle(groundCheckPoint.position, 0.2f, groundLayer);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
