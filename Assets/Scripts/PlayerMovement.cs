@@ -25,14 +25,17 @@ public class PlayerMovement : MonoBehaviour
     public float dashStrength = 10f;
     public float dashCooldown = 1f;
     private bool isDashing = false;
+    [Header("Player Hp")]
+    public Health PlayerHp;
 
     private float defaultGravityScale;
-    
+
 
     void Start()
     {
         instance = this;
         defaultGravityScale = rb.gravityScale;
+        PlayerHp = GetComponent<Health>();
     }
 
     void Update()
