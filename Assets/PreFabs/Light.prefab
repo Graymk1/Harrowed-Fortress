@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightSpeed: 5
+  amount: 1
   rb: {fileID: -8760546286719655098}
 --- !u!50 &-8760546286719655098
 Rigidbody2D:
