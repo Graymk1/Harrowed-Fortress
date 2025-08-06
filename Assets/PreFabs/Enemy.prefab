@@ -205,7 +205,7 @@ MonoBehaviour:
     m_Bits: 64
   groundCheckPoint: {fileID: 4207742462861326694}
   damage: 1
-  DamageCd: 0.2
+  DamageCd: 0.5
   DamageTimer: 0
 --- !u!114 &1891524450273083148
 MonoBehaviour:
