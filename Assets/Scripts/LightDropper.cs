@@ -5,6 +5,7 @@ public class LightDropper : MonoBehaviour
     public static LightDropper instance;
 
     public float lightSpeed = 10f;
+    public int amount;
     public Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,6 +18,7 @@ public class LightDropper : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            LightCurrency.Instance.ChangeLightCurrency(amount);
             Destroy(gameObject);
         }
     }
