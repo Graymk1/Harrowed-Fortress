@@ -145864,7 +145864,7 @@ GameObject:
   - component: {fileID: 1245989425}
   - component: {fileID: 1245989428}
   m_Layer: 0
-  m_Name: Enemy2
+  m_Name: FlyingEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145967,7 +145967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd06bf5b1e852a429f02274a4cc6eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 5
+  Speed: 5
+  rb: {fileID: 0}
 --- !u!1 &1289117409
 GameObject:
   m_ObjectHideFlags: 0
@@ -146382,6 +146383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LightCurrencyCount: 100
+  lightTimer: 0
 --- !u!95 &1427618438
 Animator:
   serializedVersion: 7
