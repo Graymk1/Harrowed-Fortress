@@ -66,12 +66,12 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleJump()
     {
-        if (GroundCheck())
+        if (GroundCheck() && rb.linearVelocityY < 0.5f)
         {
             numJumps = maxJumps;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && numJumps > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && numJumps > 0 && rb.linearVelocityY < 0.5f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
             numJumps--;
