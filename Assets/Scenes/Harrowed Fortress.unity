@@ -1256,7 +1256,7 @@ TilemapCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 98affcfc6d1ebbb46bbe5b6ffee79365, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -4869,7 +4869,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -273595970434766092, guid: 9368874680c55458ea948bc3fab8b191, type: 3}
+  m_Sprite: {fileID: 6275268049351320821, guid: df500386735c14b2ba336cbda9f209db, type: 3}
   m_Color: {r: 0.57861626, g: 0.57861626, b: 0.57861626, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4918,7 +4918,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.84375, y: 0.875}
+    oldSize: {x: 1, y: 0.96875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5651,7 +5651,7 @@ TilemapCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 98affcfc6d1ebbb46bbe5b6ffee79365, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
