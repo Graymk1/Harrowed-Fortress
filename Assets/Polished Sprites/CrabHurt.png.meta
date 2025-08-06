@@ -584,7 +584,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CrabHurt_0: 4515639423510599339
+      CrabHurt_1: 8914453632733396769
+      CrabHurt_10: -3252374619292714974
+      CrabHurt_11: 9088955057881340977
+      CrabHurt_12: 4100748406091218906
+      CrabHurt_13: -966925169604505009
+      CrabHurt_14: 4424280313608341505
+      CrabHurt_15: 5401613388455344090
+      CrabHurt_16: -1720431631974061689
+      CrabHurt_17: -6056593538162569676
+      CrabHurt_18: -8339747895749750616
+      CrabHurt_2: -7595157380641767924
+      CrabHurt_3: 4694786809776265598
+      CrabHurt_4: -1424863683654996172
+      CrabHurt_5: 1710961086466790869
+      CrabHurt_6: -2123597717870802128
+      CrabHurt_7: -1145062984911452332
+      CrabHurt_8: -2292480946550795384
+      CrabHurt_9: 6119077690891202022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
