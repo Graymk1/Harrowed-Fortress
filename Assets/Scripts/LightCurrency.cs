@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LightCurrency : MonoBehaviour
@@ -5,6 +7,9 @@ public class LightCurrency : MonoBehaviour
     public static LightCurrency Instance;
     public int LightCurrencyCount;
     public float lightTimer;
+    public GameObject val;
+    public GameObject canv;
+    public List<GameObject> lts;
     void Start()
     {
         Instance = this;
@@ -22,6 +27,10 @@ public class LightCurrency : MonoBehaviour
     public void ChangeLightCurrency(int amount)
     {
         LightCurrencyCount += amount;
+        lts.Add(Instantiate(val, canv.transform));
+        lts.LastOrDefault().transform.position = new(1824, 861 - (50 * (lts.Count - 1)), 0);
+        lts.LastOrDefault().GetComponent<Minus>().ChangeVal(amount);
+        lts.RemoveAll(item => item == null);
         if (LightCurrencyCount <= 0)
         {
             Destroy(gameObject);

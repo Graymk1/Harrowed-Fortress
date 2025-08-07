@@ -30,13 +30,15 @@ public class SwordScript : MonoBehaviour
             collision.GetComponent<Animator>().SetTrigger("Hurt");
             if (collision.GetComponent<Enemy_Movement>() != null)
             {
-                StartCoroutine(collision.GetComponent<Enemy_Movement>().KD(0.1f));
+                StartCoroutine(collision.GetComponent<Enemy_Movement>().KB(0.1f));
                 Instantiate(aether, collision.transform.localPosition, gameObject.transform.localRotation);
+                Debug.Log("KB1");
             }
             if (collision.GetComponent<Enemy2Movement>() != null)
             {
-                StartCoroutine(collision.GetComponent<Enemy2Movement>().KD(0.1f));
+                StartCoroutine(collision.GetComponent<Enemy2Movement>().KB(0.1f));
                 Instantiate(aether, collision.transform.localPosition, gameObject.transform.localRotation);
+                Debug.Log("KB2");
             }
         }
     }
