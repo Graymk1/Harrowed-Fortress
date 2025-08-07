@@ -13,6 +13,8 @@ public class SwordScript : MonoBehaviour
     public float knockback = 10f;
     public AudioClip StabFlesh;
 
+    public GameObject aether;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,9 +31,9 @@ public class SwordScript : MonoBehaviour
             collision.GetComponent<Animator>().SetTrigger("Hurt");
 
             collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 5) * 50 * PlayerMovement.instance.transform.localScale.x);
+            Instantiate(aether, collision.transform.localPosition, gameObject.transform.localRotation);
         }
     }
-
     // Update is called once per frame
     void Update()
     {
