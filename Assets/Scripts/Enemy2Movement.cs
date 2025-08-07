@@ -19,10 +19,19 @@ public class Enemy2Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerMovement.instance == null) { return; }
         Vector2 playerDir = PlayerMovement.instance.transform.position - transform.position;
         if (playerDir.magnitude < ChaseDis)
         {
             rb.linearVelocity = playerDir.normalized * Speed;
+            if (playerDir.x > 0)
+            {
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else if(playerDir.x < 0)
+            {
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
         }
         else
         {
