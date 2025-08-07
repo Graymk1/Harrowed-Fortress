@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1dba44bdb84ef49e08d721975b04ccd4
+=======
+guid: f00e140a8bd0328cdb61070400b43212
+>>>>>>> d859f9e (leveling)
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -37,7 +41,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: 1
+>>>>>>> d859f9e (leveling)
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +59,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 32
+=======
+  spritePixelsToUnits: 100
+>>>>>>> d859f9e (leveling)
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,8 +146,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable:
       IMG_0362_0: -3590985459372168616
+=======
+    nameFileIdTable: {}
+>>>>>>> d859f9e (leveling)
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
