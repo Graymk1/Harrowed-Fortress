@@ -27,8 +27,9 @@ public class PlayerMovement : MonoBehaviour
     public float dashCooldown = 0.5f;
     private bool isDashing = false;
     public TrailRenderer trail;
-    [Header("Player Hp")]
-    public Health PlayerHp;
+    [Header("Sound Effect")]
+    public AudioClip jump;
+
 
     private float defaultGravityScale;
 
@@ -37,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
     {
         instance = this;
         defaultGravityScale = rb.gravityScale;
-        PlayerHp = GetComponent<Health>();
     }
 
     void Update()

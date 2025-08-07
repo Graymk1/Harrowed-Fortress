@@ -9,6 +9,7 @@ public class SwordRotator : MonoBehaviour
     public GameObject sword;
     private bool debounce = true;
     public int SlashCostLightCurr;
+    public AudioClip swordSwish;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,6 +42,7 @@ public class SwordRotator : MonoBehaviour
 
         IEnumerator UseSword()
         {
+            AudioPlay.Instance.PlayAudioOne(swordSwish);
             if (PlayerMovement.instance.transform.localScale.x == 1)
             {
                 if (mouseDir.x > 0)

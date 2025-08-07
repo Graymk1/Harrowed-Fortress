@@ -11,6 +11,7 @@ public class SwordScript : MonoBehaviour
     private float damageTime;
     public float damageCD = 0.5f;
     public float knockback = 10f;
+    public AudioClip StabFlesh;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,7 @@ public class SwordScript : MonoBehaviour
     {
         if (collision.CompareTag("Enemy") && Time.time > damageTime)
         {
+            AudioPlay.Instance.PlayAudioOne(StabFlesh);
             damageTime = Time.time + damageCD;
             collision.GetComponent<Health>().ChangeHealth(-damage);
             collision.GetComponent<Animator>().SetTrigger("Hurt");
