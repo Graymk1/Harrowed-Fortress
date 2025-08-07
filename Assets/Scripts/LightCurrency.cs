@@ -28,7 +28,7 @@ public class LightCurrency : MonoBehaviour
     {
         LightCurrencyCount += amount;
         lts.Add(Instantiate(val, canv.transform));
-        lts.LastOrDefault().transform.position = new(1824, 861 - (50 * (lts.Count - 1)), 0);
+        lts.LastOrDefault().transform.position = new(1250, 500 - (50 * (lts.Count - 1)), 0);
         lts.LastOrDefault().GetComponent<Minus>().ChangeVal(amount);
         lts.RemoveAll(item => item == null);
         if (LightCurrencyCount <= 0)
