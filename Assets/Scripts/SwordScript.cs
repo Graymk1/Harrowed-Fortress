@@ -19,6 +19,8 @@ public class SwordScript : MonoBehaviour
 
     public GameObject aether;
 
+    public GameObject aether;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

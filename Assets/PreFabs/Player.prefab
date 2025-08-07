@@ -266,7 +266,8 @@ MonoBehaviour:
   dashStrength: 20
   dashCooldown: 1
   trail: {fileID: 87614272881162791}
-  PlayerHp: {fileID: 0}
+  jumpsound: {fileID: 0}
+  Dashsound: {fileID: 8300000, guid: 516bf1c1e79be41d0ae4018c1eed7f6c, type: 3}
 --- !u!114 &3239862899247970679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,6 +617,7 @@ MonoBehaviour:
   damage: 1
   damageCD: 0.5
   knockback: 10
+  StabFlesh: {fileID: 8300000, guid: f5193e524414a46a8989a2d4e7838beb, type: 3}
 --- !u!95 &4293789570836154168
 Animator:
   serializedVersion: 7
@@ -741,3 +743,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sword: {fileID: 6275592712512333162}
   SlashCostLightCurr: 2
+  swordSwish: {fileID: 8300000, guid: c292aa671a31f495399243089408e053, type: 3}
