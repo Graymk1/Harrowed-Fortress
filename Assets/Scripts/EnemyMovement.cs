@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Enemy_Movement : MonoBehaviour
@@ -11,6 +12,7 @@ public class Enemy_Movement : MonoBehaviour
     public float DamageCd;
     public float DamageTimer;
     bool faceRight = true;
+    bool inkd;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,20 +22,23 @@ public class Enemy_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (FlipHere())
+        if (!inkd)
         {
-            faceRight = !faceRight;
-            transform.localScale = new(-transform.localScale.x, transform.localScale.y, 1);
+            if (FlipHere())
+            {
+                faceRight = !faceRight;
+                transform.localScale = new(-transform.localScale.x, transform.localScale.y, 1);
+            }
+            if (faceRight)
+            {
+                rb.linearVelocity = new(walkSpeed, rb.linearVelocity.y);
+            }
+            else if (!faceRight)
+            {
+                rb.linearVelocity = new(-walkSpeed, rb.linearVelocity.y);
+            }
+            Debug.Log(FlipHere());
         }
-        if (faceRight)
-        {
-            rb.linearVelocity = new(walkSpeed, rb.linearVelocity.y);
-        }
-        else if (!faceRight)
-        {
-            rb.linearVelocity = new(-walkSpeed, rb.linearVelocity.y);
-        }
-        Debug.Log(FlipHere());
     }
     bool FlipHere()
     {
@@ -56,5 +61,12 @@ public class Enemy_Movement : MonoBehaviour
                 DamageTimer = DamageCd;
             }
         }
+    }
+    public IEnumerator KD(float kdTime)
+    {
+        inkd = true;
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 5) * 20 * PlayerMovement.instance.transform.localScale.x);
+        yield return new WaitForSeconds(kdTime);
+        inkd = false;
     }
 }

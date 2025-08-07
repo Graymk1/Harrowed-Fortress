@@ -28,8 +28,7 @@ public class SwordScript : MonoBehaviour
             damageTime = Time.time + damageCD;
             collision.GetComponent<Health>().ChangeHealth(-damage);
             collision.GetComponent<Animator>().SetTrigger("Hurt");
-
-            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 5) * 50 * PlayerMovement.instance.transform.localScale.x);
+            StartCoroutine(collision.GetComponent<Enemy_Movement>().KD(0.1f));
             Instantiate(aether, collision.transform.localPosition, gameObject.transform.localRotation);
         }
     }
