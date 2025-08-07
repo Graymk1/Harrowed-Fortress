@@ -28,8 +28,16 @@ public class SwordScript : MonoBehaviour
             damageTime = Time.time + damageCD;
             collision.GetComponent<Health>().ChangeHealth(-damage);
             collision.GetComponent<Animator>().SetTrigger("Hurt");
-            StartCoroutine(collision.GetComponent<Enemy_Movement>().KD(0.1f));
-            Instantiate(aether, collision.transform.localPosition, gameObject.transform.localRotation);
+            if (collision.GetComponent<Enemy_Movement>() != null)
+            {
+                StartCoroutine(collision.GetComponent<Enemy_Movement>().KD(0.1f));
+                Instantiate(aether, collision.transform.localPosition, gameObject.transform.localRotation);
+            }
+            if (collision.GetComponent<Enemy2Movement>() != null)
+            {
+                StartCoroutine(collision.GetComponent<Enemy2Movement>().KD(0.1f));
+                Instantiate(aether, collision.transform.localPosition, gameObject.transform.localRotation);
+            }
         }
     }
     // Update is called once per frame

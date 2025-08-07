@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Enemy2Movement : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Enemy2Movement : MonoBehaviour
     public int damage = 1;
     public float DamageCd = 0.2f;
     public float DamageTimer;
+    bool inkd;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,7 +30,7 @@ public class Enemy2Movement : MonoBehaviour
             {
                 GetComponent<SpriteRenderer>().flipX = true;
             }
-            else if(playerDir.x < 0)
+            else if (playerDir.x < 0)
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
@@ -54,5 +56,19 @@ public class Enemy2Movement : MonoBehaviour
                 DamageTimer = DamageCd;
             }
         }
+    }
+    public IEnumerator KD(float kdTime)
+    {
+        inkd = true;
+
+        // Get direction away from player
+        Vector2 knockbackDir = (transform.position - PlayerMovement.instance.transform.position).normalized;
+
+        // Apply force away from player (tweak multiplier as needed)
+        GetComponent<Rigidbody2D>().AddForce(knockbackDir * 100f); // 100f = 50x + 5y merged
+
+        yield return new WaitForSeconds(kdTime);
+
+        inkd = false;
     }
 }
