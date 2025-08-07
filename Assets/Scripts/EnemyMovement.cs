@@ -33,7 +33,7 @@ public class Enemy_Movement : MonoBehaviour
         {
             rb.linearVelocity = new(-walkSpeed, rb.linearVelocity.y);
         }
-        Debug.Log(FlipHere());
+        //Debug.Log(FlipHere());
     }
     bool FlipHere()
     {
