@@ -12,13 +12,6 @@ public class SwordScript : MonoBehaviour
     public float damageCD = 0.5f;
     public float knockback = 10f;
     public AudioClip StabFlesh;
-
-    public GameObject aether;
-
-    public GameObject aether;
-
-    public GameObject aether;
-
     public GameObject aether;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
