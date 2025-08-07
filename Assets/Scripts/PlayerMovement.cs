@@ -28,7 +28,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing = false;
     public TrailRenderer trail;
     [Header("Sound Effect")]
-    public AudioClip jump;
+    public AudioClip jumpsound;
+    public AudioClip Dashsound;
 
 
     private float defaultGravityScale;
@@ -87,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing && Time.time > dashTimer)
         {
+            AudioPlay.Instance.PlayAudioOne(Dashsound);
             dashTimer = Time.time + dashCooldown;
             StartCoroutine(Dash());
             trail.emitting = true;
