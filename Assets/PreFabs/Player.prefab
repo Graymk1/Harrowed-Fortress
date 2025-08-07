@@ -508,7 +508,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 9.09
+  m_PointLightOuterRadius: 1
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -671,7 +671,7 @@ MonoBehaviour:
   damageCD: 0.5
   knockback: 10
   StabFlesh: {fileID: 8300000, guid: f5193e524414a46a8989a2d4e7838beb, type: 3}
-  aether: {fileID: 847967227913949095, guid: 8ab8ae824d883d645898a7649292b1e1, type: 3}
+  aether: {fileID: 0}
 --- !u!95 &4293789570836154168
 Animator:
   serializedVersion: 7
