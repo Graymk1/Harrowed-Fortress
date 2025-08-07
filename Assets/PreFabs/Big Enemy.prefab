@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 5492534888508121516, guid: b11d9509048754cbd8c2cd8d0cc0bde5, type: 3}
   m_Color: {r: 0.24705882, g: 1, b: 0.9490196, a: 1}
   m_FlipX: 1
@@ -144,7 +144,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -168,12 +168,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3cee5d3acb3d4f59ba4233f058a064f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
+  walkSpeed: 3
   groundLayer:
     serializedVersion: 2
     m_Bits: 192
   groundCheckPoint: {fileID: 612835410920097998}
-  damage: 1
+  damage: 5
   DamageCd: 0.5
   DamageTimer: 0
 --- !u!114 &419252021892306902
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightCurrency: {fileID: 847967227913949095, guid: 8ab8ae824d883d645898a7649292b1e1, type: 3}
-  MaxHealth: 3
+  MaxHealth: 20
   CurHealth: 0
 --- !u!95 &4499199556525828906
 Animator:

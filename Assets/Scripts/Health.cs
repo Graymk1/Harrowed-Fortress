@@ -16,11 +16,7 @@ public class Health : MonoBehaviour
         if (CurHealth <= 0)
         {
             Destroy(gameObject);
-            if (gameObject.CompareTag("Enemy"))
-            {
-                Instantiate(lightCurrency,gameObject.transform.localPosition, gameObject.transform.localRotation);
+
             }
         }
     }
-
-}

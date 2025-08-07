@@ -12,6 +12,6 @@ public class UiCon : MonoBehaviour
     }
     void upLight()
     {
-        LightCur.text = "Light Currecy: " + LightCurrency.Instance.LightCurrencyCount;
+        LightCur.text = "Aether: " + LightCurrency.Instance.LightCurrencyCount;
     }
 }

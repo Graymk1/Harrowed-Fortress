@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 377614458049462827, guid: 82a8443fa23fc4aea85d7481ce402943, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightCurrency: {fileID: 847967227913949095, guid: 8ab8ae824d883d645898a7649292b1e1, type: 3}
-  MaxHealth: 1
+  MaxHealth: 8
   CurHealth: 0
 --- !u!114 &4804481219049548814
 MonoBehaviour:
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  ChaseDis: 5
+  ChaseDis: 10
   rb: {fileID: 0}
   damage: 1
   DamageCd: 0.2
@@ -176,7 +176,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
