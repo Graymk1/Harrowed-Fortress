@@ -62,7 +62,7 @@ public class Enemy_Movement : MonoBehaviour
             }
         }
     }
-    public IEnumerator KD(float kdTime)
+    public IEnumerator KB(float kdTime)
     {
         inkd = true;
         GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 5) * 20 * PlayerMovement.instance.transform.localScale.x);

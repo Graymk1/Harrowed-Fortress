@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Enemy2Movement : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Enemy2Movement : MonoBehaviour
     public int damage = 1;
     public float DamageCd = 0.2f;
     public float DamageTimer;
+    public bool inkd = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,16 +23,19 @@ public class Enemy2Movement : MonoBehaviour
     {
         if (PlayerMovement.instance == null) { return; }
         Vector2 playerDir = PlayerMovement.instance.transform.position - transform.position;
-        if (playerDir.magnitude < ChaseDis)
+        if (!inkd)
         {
-            rb.linearVelocity = playerDir.normalized * Speed;
-            if (playerDir.x > 0)
+            if (playerDir.magnitude < ChaseDis)
             {
-                GetComponent<SpriteRenderer>().flipX = true;
-            }
-            else if(playerDir.x < 0)
-            {
-                GetComponent<SpriteRenderer>().flipX = false;
+                rb.linearVelocity = playerDir.normalized * Speed;
+                if (playerDir.x > 0)
+                {
+                    GetComponent<SpriteRenderer>().flipX = true;
+                }
+                else if (playerDir.x < 0)
+                {
+                    GetComponent<SpriteRenderer>().flipX = false;
+                }
             }
         }
         else
@@ -54,5 +59,19 @@ public class Enemy2Movement : MonoBehaviour
                 DamageTimer = DamageCd;
             }
         }
+    }
+    public IEnumerator KB(float kdTime)
+    {
+        inkd = true;
+
+        // Get direction away from player
+        Vector2 knockbackDir = (transform.position - PlayerMovement.instance.transform.position).normalized;
+
+        // Apply force away from player (tweak multiplier as needed)
+        rb.AddForce(knockbackDir *50, ForceMode2D.Impulse); // 100f = 50x + 5y merged
+        Debug.Log("KB!!");
+        yield return new WaitForSeconds(kdTime);
+
+        inkd = false;
     }
 }
