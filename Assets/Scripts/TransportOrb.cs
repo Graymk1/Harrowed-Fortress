@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TransportOrb : MonoBehaviour
 {
@@ -9,9 +10,19 @@ public class TransportOrb : MonoBehaviour
 
     private Vector3 startPosition;
 
+    public int nextScene = 0;
+
     void Start()
     {
         startPosition = transform.position;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Level " + nextScene);
+        }
     }
 
     void Update()
@@ -24,5 +35,7 @@ public class TransportOrb : MonoBehaviour
 
         // Update the object's position
         transform.position = new Vector3(newX, newY, startPosition.z);
+
+
     }
 }

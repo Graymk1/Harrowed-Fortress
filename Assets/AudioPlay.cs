@@ -5,7 +5,12 @@ public class AudioPlay : MonoBehaviour
     public static AudioPlay Instance;
     void Start()
     {
-        Instance = this;
+        if(Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        
     }
     public void PlayAudioOne(AudioClip ac)
     {
