@@ -35,7 +35,7 @@ public class SwordScript : MonoBehaviour
             }
             if (collision.GetComponent<Enemy2Movement>() != null)
             {
-                StartCoroutine(collision.GetComponent<Enemy2Movement>().KB(0.1f));
+                StartCoroutine(collision.GetComponent<Enemy2Movement>().KB(0.2f));
                 Instantiate(aether, collision.transform.localPosition, gameObject.transform.localRotation);
             }
         }
