@@ -121,10 +121,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   ChaseDis: 10
-  rb: {fileID: 0}
-  damage: 1
-  DamageCd: 0.2
+  rb: {fileID: 7397210887243409243}
+  damage: 3
+  DamageCd: 0.5
   DamageTimer: 0
+  inkd: 0
 --- !u!58 &100470326394112782
 CircleCollider2D:
   m_ObjectHideFlags: 0
