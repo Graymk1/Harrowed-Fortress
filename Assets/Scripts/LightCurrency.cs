@@ -10,6 +10,8 @@ public class LightCurrency : MonoBehaviour
     public GameObject val;
     public GameObject canv;
     public List<GameObject> lts;
+
+    public GameObject gameOver;
     void Start()
     {
         Instance = this;
@@ -34,6 +36,7 @@ public class LightCurrency : MonoBehaviour
         if (LightCurrencyCount <= 0)
         {
             Destroy(gameObject);
+            gameOver.SetActive(true);
         }
     }
 }

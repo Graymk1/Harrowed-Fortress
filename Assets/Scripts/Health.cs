@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
         if (CurHealth <= 0)
         {
             Destroy(gameObject);
+            
 
             }
         }
