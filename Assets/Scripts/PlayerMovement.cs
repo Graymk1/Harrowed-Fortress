@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float defaultGravityScale;
 
+    public Animator animator;
+
 
     void Start()
     {
@@ -47,6 +49,9 @@ public class PlayerMovement : MonoBehaviour
         HandleMovement();
         HandleJump();
         HandleDash();
+
+        animator.SetFloat("yVelocity",rb.linearVelocityY);
+        animator.SetFloat("xVelocity", Mathf.Abs(rb.linearVelocityX));
     }
 
     void HandleMovement()
