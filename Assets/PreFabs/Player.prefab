@@ -116,7 +116,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -3128351650240848657, guid: b627643b9c73d475aade433af9069619, type: 3}
+  m_Sprite: {fileID: -1719835363712613648, guid: ed269b3ca3a8e49a88b0f15fc2dee93d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -181,6 +181,7 @@ MonoBehaviour:
   trail: {fileID: 87614272881162791}
   jumpsound: {fileID: 0}
   Dashsound: {fileID: 8300000, guid: 516bf1c1e79be41d0ae4018c1eed7f6c, type: 3}
+  animator: {fileID: 5062617781197180949}
 --- !u!114 &3239862899247970679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +353,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.21875, y: 1.65625}
+    oldSize: {x: 1.25, y: 1.6875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -422,7 +423,7 @@ Animator:
   m_GameObject: {fileID: 2005802924559485597}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8351afdb92222cb43ae612ff05b42f52, type: 2}
+  m_Controller: {fileID: 9100000, guid: 37790e7a1c38d92439b5b53ad3c78368, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
