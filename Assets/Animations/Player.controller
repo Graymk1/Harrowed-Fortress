@@ -298,7 +298,6 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-<<<<<<< Updated upstream
     m_State: {fileID: -1183751512063482599}
     m_Position: {x: 340, y: 110, z: 0}
   - serializedVersion: 1
@@ -307,13 +306,6 @@ AnimatorStateMachine:
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -614285418616712001}
-=======
-    m_State: {fileID: 1509065659623911457}
-    m_Position: {x: 300, y: 90, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions:
-  - {fileID: 6443198018062232460}
->>>>>>> Stashed changes
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
@@ -321,8 +313,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 160, y: -40, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-<<<<<<< Updated upstream
   m_DefaultState: {fileID: -2635626036140969670}
-=======
-  m_DefaultState: {fileID: 1509065659623911457}
->>>>>>> Stashed changes
