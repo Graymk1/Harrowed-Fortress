@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: ed269b3ca3a8e49a88b0f15fc2dee93d
+guid: f79cb4e082ab84fa996eff147e950cbe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1719835363712613648
-    second: IMG_0264_0
+      213: 2555367647144294544
+    second: pixil-frame-0 (13)_0
+  - first:
+      213: 428539790929782388
+    second: pixil-frame-0 (13)_1
+  - first:
+      213: -7774964852680227607
+    second: pixil-frame-0 (13)_2
+  - first:
+      213: 7041384331746634415
+    second: pixil-frame-0 (13)_3
+  - first:
+      213: -5838558566941041114
+    second: pixil-frame-0 (13)_4
+  - first:
+      213: -4396565841588817217
+    second: pixil-frame-0 (13)_5
+  - first:
+      213: -2698831473116292622
+    second: pixil-frame-0 (13)_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0264_0
+      name: pixil-frame-0 (13)_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 4
-        width: 40
-        height: 54
+        x: 0
+        y: 48
+        width: 96
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +133,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f241c949dae128e0800000000000000
-      internalID: -1719835363712613648
+      spriteID: 098bf8e065d767320800000000000000
+      internalID: 2555367647144294544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixil-frame-0 (13)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4766d7a5baa72f500800000000000000
+      internalID: 428539790929782388
       vertices: []
       indices: 
       edges: []
@@ -125,7 +165,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: eb85d732332684fea89b26dec51e838c
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +175,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0264_0: -1719835363712613648
+      pixil-frame-0 (13)_0: 2555367647144294544
+      pixil-frame-0 (13)_1: 428539790929782388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

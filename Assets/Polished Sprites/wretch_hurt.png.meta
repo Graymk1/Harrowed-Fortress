@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wretch_hurt_0: 4725268974845456189
+      wretch_hurt_1: 7071030819347338421
+      wretch_hurt_2: -3555771321975612004
+      wretch_hurt_3: 4612929412621201968
+      wretch_hurt_4: -1536077753387080729
+      wretch_hurt_5: -606701616568415915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player_fall_transition_0: -2862408702345642251
+      player_fall_transition_1: 7406567405534171096
+      player_fall_transition_2: 645516901729610719
+      player_fall_transition_3: 788411495428729384
+      player_fall_transition_4: 662794490306728331
+      player_fall_transition_5: -9048135076964526815
+      player_fall_transition_6: -8902353688561062964
+      player_fall_transition_7: -2582477221757835589
+      player_fall_transition_8: 951878047221172549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
